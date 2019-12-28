@@ -75,7 +75,11 @@ Explanation: The two lists do not intersect, so return null.
 
 - 用两个指针cur1，cur2从头同时遍历A，B两个链表，当两个链表相交时应该有cur1==cur2!=null，如果没有则不相交。链表长度相等时遍历一次即可，如果长度不相等，当cur1到达终点时，开始遍历B，当cur2到达终点时，开始遍历A，可以证明最多经过两次遍历即可完成判断。
 
-  ![](img\160.png)
+
+
+<img src="img/160.png" />
+
+  
 
   如图，将两个链表表示为a+c和b+c，c是相交的部分（c的长度可以是0）。遍历完两个链表，一定会从某个节点开始有cur1==cur2，如果c不存在则有cur1==cur2==null
 
