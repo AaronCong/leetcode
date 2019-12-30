@@ -53,6 +53,7 @@ Can you solve it without using extra space?
 
   设链表无环的部分长度是a，相遇时slow在环上走了b，环的长度是c，因为fast的速度是slow的两倍，应该有$2(a+b) = a+b+c$，即$a+b=c$。由图可以看出，当slow和fast相遇时，slow与环起点的距离应该等于链表起点到环起点的距离，因此当两指针相遇时，再定义一指针i从链表起点出发，每次走一步，当slow与i相遇时，相遇的节点就是环的起点。
   
+  <img src='img/142.png'>
 
 #### 代码
 
